@@ -37,15 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
+    'django.contrib.sites', # new
 
+    # 3rd-party apps
     'rest_framework',
     'rest_framework.authtoken',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
+    'allauth', # new
+    'allauth.account', # new
+    'allauth.socialaccount', # new
     'rest_auth',
-    'rest_auth.registration',
+    'rest_auth.registration', # new
 
     # Local
     'posts.apps.PostsConfig',
