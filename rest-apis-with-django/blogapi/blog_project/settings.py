@@ -37,16 +37,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites', # new
+    'django.contrib.sites',
 
     # 3rd-party apps
     'rest_framework',
     'rest_framework.authtoken',
-    'allauth', # new
-    'allauth.account', # new
-    'allauth.socialaccount', # new
+    'rest_framework_swagger',
+    'allauth',
+    'allauth.account', 
+    'allauth.socialaccount',
     'rest_auth',
-    'rest_auth.registration', # new
+    'rest_auth.registration',
 
     # Local
     'posts.apps.PostsConfig',
@@ -64,6 +65,12 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
 }
+
+SWAGGER_SETTINGS = {
+        'LOGIN_URL': 'rest_framework:login',
+        'LOGOUT_URL': 'rest_framework:logout',
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

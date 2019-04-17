@@ -14,6 +14,7 @@ django-rest-auth = "==0.9.3"
 django-allauth = "==0.37.1"
 coreapi = "==2.3.3"
 pyyaml = "==3.13"
+django-rest-swagger = "==2.2.0"
 
 [requires]
 python_version = "3.7"
